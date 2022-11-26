@@ -21,4 +21,9 @@ public class InputManager : ScriptableObject
     {
         return PlayerControls.Player.Movement.ReadValue<Vector2>().x;
     }
+
+    public bool OnJump()
+    {
+        return PlayerControls.Player.Jump.triggered;
+    }
 }
